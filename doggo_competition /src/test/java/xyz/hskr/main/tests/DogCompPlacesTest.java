@@ -1,12 +1,18 @@
+package xyz.hskr.main.tests;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class DogCompPlaces_TEST {
+import xyz.hskr.main.DogCompPlaces;
+
+public class DogCompPlacesTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		DogCompPlaces myComp = new DogCompPlaces();
+		String input = "3rd";
+		String[] result = myComp.InputPlace(input);
+		assertNotSame("The Result should not read 3rd Place.", input, result[2]);
 	}
 
 }
